@@ -37,13 +37,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
         
         <?php if(strcasecmp($user->type,'supplier')==0){ ?>
         <li>
-              <a href="supplier-tools.php">
+              <a href="<?php echo site_url('dashboard/production_tools')?>">
                 <i class="fa fa-cubes"></i> <span>Production Tools</span>
               </a>
         </li>
         <!-- Dashboard link -->
         <li>
-                <a href="supplier-trade.php">
+        <a href="<?php echo site_url('dashboard/trade_in')?>">
                   <i class="fa fa-exchange-alt"></i> <span>Trade In</span>
                 </a>
         </li>
@@ -52,12 +52,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
         <?php if(strcasecmp($user->type,'business')==0){ ?>
         <li>
-              <a href="supplier-tools.php">
+        <a href="<?php echo site_url('dashboard/products')?>">
                 <i class="fa fa-circle-o"></i> <span>Products</span>
               </a>
         </li>
-        <!-- Dashboard link -->
-        <li>
+        <!-- For Future implementation -->
+        <!-- <li>
                 <a href="supplier-trade.php">
                   <i class="fa fa-circle-o  "></i> <span>Supply</span>
                 </a>
@@ -67,7 +67,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <a href="supplier-trade.php">
                   <i class="fa fa-upload"></i> <span>Top Up</span>
                 </a>
-        </li>
+        </li> -->
 
         <?php } ?>
 
