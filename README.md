@@ -1,2 +1,3 @@
 # ALTech
-Algae algo algotron blah blah
+Algae Production with blockchain implementation using Smart Contracts.
+
